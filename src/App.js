@@ -1,9 +1,10 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import ExpenseItem from "./Components/Expenses/Expenseitem";
 // import ExpenseDate from "./Components/ExpenseDate";
 import "./Components/Expenses/Expenses.css"
-
+import "./Components/NewExpenses/ExpenseForm.css"
+import NewExpense  from "./Components/NewExpenses/NewExpense";
 
 const App = () => {
   const data = [
@@ -28,6 +29,7 @@ const App = () => {
     //ALTERNATE WAYS OF PASSING PROPS
     <div>
     <h1>Let's get started!</h1>
+     <NewExpense />
      <div className="expenses">
       <ExpenseItem title={data[0].title} amount={data[0].amount} date={data[0].date}></ExpenseItem>
       <ExpenseItem title={data[1].title} amount={data[1].amount} date={data[1].date}></ExpenseItem>
